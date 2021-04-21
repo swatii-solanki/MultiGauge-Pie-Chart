@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="@dimen/_6sdp"
+            app:cardElevation="@dimen/_6sdp"
+            app:cardUseCompatPadding="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_12sdp">
+
+                <TextView
+                    android:id="@+id/tvCourseName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/science"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_14ssp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.techchallengepiechart.utils.MultiGauge
+                    android:id="@+id/chart"
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="@dimen/_100sdp"
+                    android:layout_below="@id/tvCourseName"
+                    android:layout_marginTop="@dimen/_16sdp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvCourseName"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_16sdp"
+                    android:layout_toEndOf="@id/chart"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:id="@+id/ivApplication"
+                                android:layout_width="@dimen/_40sdp"
+                                android:layout_height="@dimen/_40sdp"
+                                android:background="@drawable/yellow_bg"
+                                android:padding="@dimen/_5sdp"
+                                android:src="@drawable/application" />
+
+                            <TextView
+                                android:id="@+id/tvAbilityOneValue"
+                                style="@style/tvStyleBold"
+                                android:layout_toEndOf="@id/ivApplication" />
+
+                            <TextView
+                                android:id="@+id/tvAbilityOne"
+                                style="@style/tvStyle"
+                                android:layout_below="@id/tvAbilityOneValue"
+                                android:layout_toEndOf="@id/ivApplication" />
+                        </RelativeLayout>
+
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_20sdp">
+
+                            <ImageView
+                                android:id="@+id/ivUnderstanding"
+                                android:layout_width="@dimen/_40sdp"
+                                android:layout_height="@dimen/_40sdp"
+                                android:background="@drawable/pink_bg"
+                                android:padding="@dimen/_5sdp"
+                                android:src="@drawable/understanding" />
+
+                            <TextView
+                                android:id="@+id/tvAbilityTwoValue"
+                                style="@style/tvStyleBold"
+                                android:layout_toEndOf="@id/ivUnderstanding" />
+
+                            <TextView
+                                android:id="@+id/tvAbilityTwo"
+                                style="@style/tvStyle"
+                                android:layout_below="@id/tvAbilityTwoValue"
+                                android:layout_toEndOf="@id/ivUnderstanding" />
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_15sdp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:id="@+id/ivSkill"
+                                android:layout_width="@dimen/_40sdp"
+                                android:layout_height="@dimen/_40sdp"
+                                android:background="@drawable/purple_bg"
+                                android:padding="@dimen/_5sdp"
+                                android:src="@drawable/skill" />
+
+                            <TextView
+                                android:id="@+id/tvAbilityThreeValue"
+                                style="@style/tvStyleBold"
+                                android:layout_toEndOf="@id/ivSkill" />
+
+                            <TextView
+                                android:id="@+id/tvAbilityThree"
+                                style="@style/tvStyle"
+                                android:layout_below="@id/tvAbilityThreeValue"
+                                android:layout_toEndOf="@id/ivSkill" />
+                        </RelativeLayout>
+
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_20sdp">
+
+                            <ImageView
+                                android:id="@+id/ivKnowledge"
+                                android:layout_width="@dimen/_40sdp"
+                                android:layout_height="@dimen/_40sdp"
+                                android:background="@drawable/teal_bg"
+                                android:padding="@dimen/_5sdp"
+                                android:src="@drawable/knowledge" />
+
+                            <TextView
+                                android:id="@+id/tvAbilityFourValue"
+                                style="@style/tvStyleBold"
+                                android:layout_toEndOf="@id/ivKnowledge" />
+
+                            <TextView
+                                android:id="@+id/tvAbilityFour"
+                                style="@style/tvStyle"
+                                android:layout_below="@id/tvAbilityFourValue"
+                                android:layout_toEndOf="@id/ivKnowledge" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+            </RelativeLayout>
+        </com.google.android.material.card.MaterialCardView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

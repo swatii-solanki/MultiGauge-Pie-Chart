@@ -1,0 +1,20 @@
+{
+	"courseName": "Science",
+	"abilities": [{
+		"name": "Application",
+		"totalMarksObtained": 4.0,
+		"outOf": 8.5
+	}, {
+		"name": "Skill",
+		"totalMarksObtained": 3.5,
+		"outOf": 8.5
+	}, {
+		"name": "Understanding",
+		"totalMarksObtained": 11.0,
+		"outOf": 13.0
+	}, {
+		"name": "Knowledge",
+		"totalMarksObtained": 7.5,
+		"outOf": 10.0
+	}]
+}

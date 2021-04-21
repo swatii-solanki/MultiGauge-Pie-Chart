@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">TechChallengePieChart</string>
+    <string name="science">Science</string>
+    <string name="application">Application</string>
+    <string name="understanding">Understanding</string>
+    <string name="thinking_skills">Thinking Skills</string>
+    <string name="knowledge">Knowledge</string>
+</resources>
